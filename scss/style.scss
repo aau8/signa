@@ -1,0 +1,73 @@
+.signa {
+  position: fixed;
+  bottom: -10px; 
+  left: 50%;
+  max-width: 900px;
+  width: 100%;
+  transform: translate(-50%,100%);
+  padding: 0 16px;
+  transition: .4s;
+  z-index: 1;
+}
+
+.signa._show {
+  bottom: 24px;
+  transform: translate(-50%,0);
+}
+
+.signa__body {
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px; 
+  background: rgb(255,255,255);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signa-text {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+  opacity: .7;
+}
+
+.signa-text span {
+  font-weight: 600;
+}
+
+.signa-text a {
+  color: inherit;
+  text-decoration: underline;
+  transition: .2s;
+}
+
+.signa-text a:hover {
+  color: #009E74;
+}
+
+.signa-close {
+  height: 18px;
+  background: none;
+  border: none;
+  margin: 0 0 0 16px;
+  cursor: pointer;
+}
+
+.signa-close svg path,
+.signa-close svg rect {
+  transition: .2s;
+}
+
+.signa-close:hover svg path {
+  fill-opacity: .4;
+}
+
+.signa-close:hover svg rect {
+  stroke-opacity: .4;
+}
+
+.signa-close svg {
+  width: 18px;
+  height: 18px;
+}
